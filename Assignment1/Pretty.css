@@ -2,10 +2,12 @@
 Jonah Skinner's,
 44908415, 2018
 "Gruber"
+"<ul>" means unordered lists
+"<li>" means list item
 */
 
 body {
-  background-color: /*rgba(200, 40, 20, .7)*/inherit;
+  background-color: inherit;
   font-family: 'Verdana', sans-serif;
 }
 
@@ -161,11 +163,6 @@ button:hover {
 
 .fa-instagram {
   background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
   color: white;
 }
 
