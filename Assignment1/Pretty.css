@@ -3,6 +3,17 @@ Jonah Skinner's,
 44908415, 2018
 "Gruber"
 "<ul>" means unordered lists
+<ul>
+<li> item 1 </li>
+<li> item 2 </li>
+<li> item 3 </li>
+</ul>
+"<ol>" means oredered lists
+<ol>
+<li> item 1 </li>
+<li> item 2 </li>
+<li> item 3 </li>
+</ol>
 "<li>" means list item
 */
 
@@ -32,11 +43,11 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: purple;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #2147CA;
 }
 
 h1 {
@@ -50,16 +61,28 @@ h6 {
   text-align: center;
 }
 
+/* paragraph attributes*/
+
 p {
   color: black;
   text-align: center;
 }
 
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box
+}
 
-/* https://www.w3schools.com/howto/howto_css_signup_form.asp */
-/* Full-width input fields */
-  input[type=text], input[type=password] {
+/* The main crux of the code is from
+https://www.w3schools.com/howto/howto_css_signup_form.asp
+but there are lots of edits I have done to the original code.
+"Full-width input fields"
+This is where we input the things needed when signing up for a email subscription or making an
+account for the website. So email, password, and repeating the password for confirmation.
+*/
+
+/* password input */
+
+input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -68,10 +91,14 @@ p {
   background: #f1f1f1;
 }
 
+/* Second password input */
+
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
+
+/* the grey header/line above the first input field below the thumbs up*/
 
 hr {
   border: 1px solid #f1f1f1;
@@ -79,6 +106,7 @@ hr {
 }
 
 /* Set a style for all buttons */
+
 button {
   background-color: #4CAF50;
   color: white;
@@ -90,28 +118,34 @@ button {
   opacity: 0.9;
 }
 
+/* changes the opacity when the mouse is on top of it*/
+
 button:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 /* Extra styles for the cancel button */
+
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
+
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
 }
 
 /* Add padding to container elements */
+
 .container {
-  padding: 1px;
+  padding: 10px;
 }
 
 /* Clear floats */
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -119,14 +153,23 @@ button:hover {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
+
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
 }
+
 /* End of https://www.w3schools.com/howto/howto_css_signup_form.asp */
 
-/* ABOUT PAGE STUFF */
+/*
+Images of social media blocks
+each word representing a company is the logo that is being represented
+and color represents the background of the image.
+These images are from this website and are also listed in the hrefs of the html files.
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+*/
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -137,7 +180,7 @@ button:hover {
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -159,7 +202,6 @@ button:hover {
   background: #007bb5;
   color: white;
 }
-
 
 .fa-instagram {
   background: #125688;
@@ -206,7 +248,6 @@ button:hover {
   background: #eb4924;
   color: white;
 }
-
 
 .fa-soundcloud {
   background: #ff5500;
