@@ -16,12 +16,17 @@ Jonah Skinner's,
 </ol>
 "<li>" means list item
 */
-/*Controls the size of our twitter widget*/
 
+/*Controls the size of our twitter widget*/
 #twitter-widget-0 {
       width: 99.95% !important;
       align-self: center;
     }
+/* google api about the trend of trash dove*/
+#google-trends {
+  width: 100%;
+  height: 100%;
+}
 
 body {
   background-color: inherit;
@@ -61,7 +66,12 @@ h1 {
   text-align: left;
   font-family: inherit;
 }
-
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
 h6 {
   color: black;
   text-align: center;
