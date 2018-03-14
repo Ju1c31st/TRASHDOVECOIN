@@ -16,11 +16,16 @@ Jonah Skinner's,
 </ol>
 "<li>" means list item
 */
-/*flying image*/
+/*Controls the size of our twitter widget*/
+
+#twitter-widget-0 {
+      width: 99.95% !important;
+      align-self: center;
+    }
 
 body {
   background-color: inherit;
-  font-family: 'Verdana', sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
 }
 /* Our tabs which allow us to move from one page to another */
 ul {
