@@ -21,7 +21,7 @@ body {
   background-color: inherit;
   font-family: 'Verdana', sans-serif;
 }
-
+/* Our tabs which allow us to move from one page to another */
 ul {
   list-style-type: none;
   margin: 0;
