@@ -1,5 +1,8 @@
 <!-- Made by 44908415, Jonah Skinner 2018 "Gruber" -->
 <!--LEARN -->
+<!-- dovebird cartoon images are from https://www.google.com.au/imgres?imgurl=http://i0.kym-cdn.com/photos/images/facebook/001/221/802/88c.png&imgrefurl=http://knowyourmeme.com/photos/1221802-trash-doves&h=960&w=636&tbnid=_1ViuU9LmiRJgM:&tbnh=186&tbnw=123&usg=__HXQCggGTtzWekHurybUeIFpCAtM%3D&vet=10ahUKEwj9xf634fzZAhUMy7wKHZrdBaEQ_B0IsQEwCg..i&docid=pLv1EUGFb0h-ZM&itg=1&sa=X&ved=0ahUKEwj9xf634fzZAhUMy7wKHZrdBaEQ_B0IsQEwCg-->
+
+
 <html>
 
 <head>
@@ -48,6 +51,26 @@
     became a viral subject of photoshopped parodies, gifs and image macros on the social media.
   </p>
   <br/>
+  <!--from ed moore's site http://ed-moore.net/html/js -->
+  <script type="text/javascript">
+    var images  = new Array();
+    images[0]   = "http://ed-moore.net/html/assets/slideshow0.jpg";
+    images[1]   = "http://ed-moore.net/html/assets/slideshow1.jpg";
+    images[2]   = "http://ed-moore.net/html/assets/slideshow2.jpg";
+    images[3]   = "http://ed-moore.net/html/assets/slideshow3.jpg";
+    var current = 0;
+
+    function changeImage(inc) {
+        current += inc;
+        document.getElementById("target").src = images[Math.abs(current)%images.length];
+    }
+</script>
+<!-- dovebird cartoon images are from https://www.google.com.au/imgres?imgurl=http://i0.kym-cdn.com/photos/images/facebook/001/221/802/88c.png&imgrefurl=http://knowyourmeme.com/photos/1221802-trash-doves&h=960&w=636&tbnid=_1ViuU9LmiRJgM:&tbnh=186&tbnw=123&usg=__HXQCggGTtzWekHurybUeIFpCAtM%3D&vet=10ahUKEwj9xf634fzZAhUMy7wKHZrdBaEQ_B0IsQEwCg..i&docid=pLv1EUGFb0h-ZM&itg=1&sa=X&ved=0ahUKEwj9xf634fzZAhUMy7wKHZrdBaEQ_B0IsQEwCg-->
+<img src=" change this to something" id="target" height="300" width="300"/>
+<br/>
+<a href="javascript:changeImage(-1);">Previous Image</a>
+<br/>
+<a href="javascript:changeImage(1);">Next Image</a>
 </body>
 <a name="gothere"></a>
 
