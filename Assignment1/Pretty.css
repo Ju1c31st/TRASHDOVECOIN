@@ -21,7 +21,7 @@ Jonah Skinner's,
 
 #twitter-widget-0 {
   width: 99.95% !important;
-  align-self: center;
+  align-self: right;
 }
 
 /* google api about the trend of trash dove*/
@@ -61,6 +61,7 @@ li a:hover:not(.active) {
   background-color: #2147CA;
 }
 
+/*here is our heading and paragraph text styling*/
 h1 {
   color: black;
   text-align: left;
@@ -87,11 +88,10 @@ p {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box
-}
 
-/* The main crux of the code is from
+
+/* The main crux of the sign up page code is from here, I did little edits here and there
+to make it better.
 https://www.w3schools.com/howto/howto_css_signup_form.asp
 but there are lots of edits I have done to the original code.
 "Full-width input fields"

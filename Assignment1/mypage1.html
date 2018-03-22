@@ -16,7 +16,7 @@
     <li><a href="index.html">GET STARTED</a></li>
     <li><a class="active" href="mypage1.html">LEARN</a></li>
     <li><a href="mypage2.html">RESOURCES</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="about.html">SIGN UP</a></li>
   </ul>
 
   <img src="Images/QuestionBird.jpg" alt="Bird" width="250" height="220" align="right">
@@ -52,26 +52,21 @@
   </p>
   <br/>
   <!--from ed moore's site http://ed-moore.net/html/js -->
-  <script type="text/javascript">
-    var images  = new Array();
-    images[0]   = "http://ed-moore.net/html/assets/slideshow0.jpg";
-    images[1]   = "http://ed-moore.net/html/assets/slideshow1.jpg";
-    images[2]   = "http://ed-moore.net/html/assets/slideshow2.jpg";
-    images[3]   = "http://ed-moore.net/html/assets/slideshow3.jpg";
-    var current = 0;
+      <img id="image" src="Assignment1/Images/AdoraBowl.jpg" style="width:200px">
+      <p></p>
+      <script>
+        var imageSources = ["Assignment1/Images/AdoraBowl.jpg", "https://www.w3schools.com/howto/img_mountains.jpg"]
 
-    function changeImage(inc) {
-        current += inc;
-        document.getElementById("target").src = images[Math.abs(current)%images.length];
-    }
-</script>
-<!-- dovebird cartoon images are from https://www.google.com.au/imgres?imgurl=http://i0.kym-cdn.com/photos/images/facebook/001/221/802/88c.png&imgrefurl=http://knowyourmeme.com/photos/1221802-trash-doves&h=960&w=636&tbnid=_1ViuU9LmiRJgM:&tbnh=186&tbnw=123&usg=__HXQCggGTtzWekHurybUeIFpCAtM%3D&vet=10ahUKEwj9xf634fzZAhUMy7wKHZrdBaEQ_B0IsQEwCg..i&docid=pLv1EUGFb0h-ZM&itg=1&sa=X&ved=0ahUKEwj9xf634fzZAhUMy7wKHZrdBaEQ_B0IsQEwCg-->
-<img src=" change this to something" id="target" height="300" width="300"/>
-<br/>
-<a href="javascript:changeImage(-1);">Previous Image</a>
-<br/>
-<a href="javascript:changeImage(1);">Next Image</a>
+        var index = 0;
+        setInterval(function(){
+          if (index === imageSources.length) {
+            index = 0;
+          }
+          document.getElementById("image").src = imageSources[index];
+          index++;
+        }, 2000);
+      </script>
+  <a name="gothere"></a>
 </body>
-<a name="gothere"></a>
 
 </html>
