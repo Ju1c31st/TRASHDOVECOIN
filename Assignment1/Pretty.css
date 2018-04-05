@@ -17,21 +17,12 @@ Jonah Skinner's,
 "<li>" means list item
 */
 
-/*Controls the size of our twitter widget*/
-
-#twitter-widget-0 {
-  width: 99.95% !important;
-  align-self: right;
-}
-
-/* google api about the trend of trash dove*/
 
 body {
   background-color: inherit;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: Georgia, Times, serif;
 }
-
-/* Our tabs which allow us to move from one page to another */
+/* Our tabs which allow us to move from one page to another and their features (colour, size, position) */
 
 ul {
   list-style-type: none;
@@ -60,7 +51,6 @@ li a:hover:not(.active) {
 .active {
   background-color: #2147CA;
 }
-
 /*here is our heading and paragraph text styling*/
 h1 {
   color: black;
@@ -86,6 +76,21 @@ h6 {
 p {
   color: black;
   text-align: center;
+  font-size: 120%;
+}
+
+/* This .table is for a twitter widget because I wanted it to be in the middle of the screen
+So by putting the twitter feature in a table it allows me to control the size and position of
+twitter feed which is now encapusulated by the table. by my understanding.
+*/
+.table{
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align: middle;
 }
 
 
