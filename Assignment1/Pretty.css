@@ -51,12 +51,7 @@ li a:hover:not(.active) {
 .active {
   background-color: #2147CA;
 }
-.how2Start {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+
 /*here is our heading and paragraph text styling*/
 h1 {
   color: black;
@@ -86,16 +81,16 @@ p {
 }
 
 
-
 /* This .table is for a twitter widget because I wanted more control
 over the size and positioning of this widget
 */
-.table{
+.table {
     display:table;
     height: 100%;
     width: 100%;
+
 }
-.table-cell{
+.table-cell {
     display:table-cell;
     vertical-align: middle;
 }
