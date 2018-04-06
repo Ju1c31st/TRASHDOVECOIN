@@ -9,9 +9,33 @@
   <p>This page was created by <strong>JONAH SKINNER</strong> otherwise known as <strong>44908415</strong>
     <p>
       <title> DoveCoin </title>
+      <!--https://stackoverflow.com/questions/22873190/javascript-to-scroll-text-across-the-screen
+    I got the main code from here but I messed around with it so that it can go infinitely or if i can figure out how to make it
+  bounce left and right then ill leave it at that-->
+      <script type="text/javascript">
+        var intX = 1200;
+
+        function move() {
+          var objDiv = document.getElementById('id1');
+          if (objDiv != null) {
+            objDiv.style.left = (intX -= 3).toString() + 'px';
+          } //if
+          if (intX > 0) {
+            setTimeout(move, 20);
+          }//Heres where we infinite loop it (my contribution)
+          if(intX<0){
+            intX=1200;
+          }
+          return true;
+        }
+      </script>
+
 </head>
 
 <body>
+  <!-- My 1st ever javascript text input-->
+  <div id="id1" class="divclass" style="left:1100px; position:absolute; white-space:nowrap;">Jonah Skinner 44908415</div>
+  <input type="button" onclick="move()" value="Press me FASTER!">
   <h1> <img src="Images/200w_d.gif" alt="Bird" width="192" height="108"> DOVECOIN </h1>
   <ul>
     <li><a class="active" href="index.html">GET STARTED</a></li>
@@ -42,12 +66,12 @@
     <br />
     <li>There are many cryptocurrencies to choose from, they each have their own special capabilities and some even support charities</li>
   </ol>
-<h4 align="center"><a href="#gothere">Enough talk! Show me where to throw my money!</a></h4>
-<h4 align="center"><a href="#prices">Check the prices</a></h4>
+  <h4 align="center"><a href="#gothere">Enough talk! Show me where to throw my money!</a></h4>
+  <h4 align="center"><a href="#prices">Check the prices</a></h4>
 
 
 
-<a name="gothere"></a>
+  <a name="gothere"></a>
   <h3>All right I have my money.. How do I get started? </h3>
   <dl>
     <dt>A. Computer!</dt>
@@ -112,6 +136,48 @@
   </table>
   <hr />
   <a name="prices"></a>
+
+  <br/>
+  <!--from ed moore's site http://ed-moore.net/html/js my second ever javascript :)
+    But here is where i made his code better! I uploaded images to https://imgbb.com/ which were cut from the original big collage
+    I did it this way is because javascript for some reason wont let me get images straight from the directory and they need to be online
+    possibly for security reasons-->
+  <img id="image" src="https://preview.ibb.co/dVF64x/200w_d.gif" style="width:200px">
+  <p></p>
+  <script>
+    var imageSources = ["https://image.ibb.co/m2Qjrc/Adora_Bowl.jpg",
+      "https://image.ibb.co/gydhcH/bdayBird.jpg",
+      "https://image.ibb.co/cWqHBc/Bread.jpg",
+      "https://image.ibb.co/gO5THH/Business.jpg",
+      "https://image.ibb.co/cohKPx/Dead.jpg",
+      "https://image.ibb.co/hCY4rc/Donut.jpg",
+      "https://image.ibb.co/fe064x/Duck.jpg",
+      "https://image.ibb.co/maihcH/French.jpg",
+      "https://image.ibb.co/io3hcH/Inspector_Bird.png",
+      "https://image.ibb.co/f0vjrc/kiss.jpg",
+      "https://image.ibb.co/m47axH/Laydown.jpg",
+      "https://image.ibb.co/i0T4rc/Loafing.jpg",
+      "https://image.ibb.co/hj5jrc/Love.jpg",
+      "https://image.ibb.co/gNh8HH/Love_Bread.jpg",
+      "https://image.ibb.co/k6ENcH/Martini.jpg",
+      "https://image.ibb.co/kFjcBc/Phone.jpg",
+      "https://image.ibb.co/i5F64x/Pizza_Bird.png",
+      "https://image.ibb.co/cbNm4x/Question_Bird.png",
+      "hhttps://image.ibb.co/kE7axH/Sad.jpg",
+      "https://image.ibb.co/jyZAWc/Scream.jpg",
+      "https://image.ibb.co/b9fjrc/Tea.jpg",
+      "https://image.ibb.co/dh2axH/Winner.jpg"
+    ]
+
+    var index = 0;
+    setInterval(function() {
+      if (index === imageSources.length) {
+        index = 0;
+      }
+      document.getElementById("image").src = imageSources[index];
+      index++;
+    }, 2000);
+  </script>
 
 
 
